@@ -3,4 +3,4 @@ streamlit
 plotly
 matplotlib
 joblib
-
+scikit-learn

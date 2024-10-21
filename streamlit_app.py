@@ -13,7 +13,7 @@ import sklearn
 
 # Display the scikit-learn version
 st.write("scikit-learn version:", sklearn.__version__)
-streamlit run check_sklearn_version.py
+
 
 
 

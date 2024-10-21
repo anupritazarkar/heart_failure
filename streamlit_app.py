@@ -7,7 +7,7 @@ import pandas as pd
 #from sklearn.preprocessing import MaxAbsScaler
 ##from sklearn.ensemble import RandomForestClassifier
 import joblib  # Assuming you saved your model
-pip install -r requirements.txt
+
 
 
 st.title("Heart Failure Prediction")

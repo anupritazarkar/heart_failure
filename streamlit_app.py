@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 #from sklearn.preprocessing import MaxAbsScaler
 ##from sklearn.ensemble import RandomForestClassifier
-!pip import joblib  # Assuming you saved your model
+import joblib  # Assuming you saved your model
 
 st.title("Heart Failure Prediction")
 

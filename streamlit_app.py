@@ -45,6 +45,5 @@ if st.button("Predict"):
     st.write(f"The prediction is: **{result}**")
 
 
-streamlit run check_version.py
 
 

@@ -8,16 +8,6 @@ import pandas as pd
 ##from sklearn.ensemble import RandomForestClassifier
 import joblib  # Assuming you saved your model
 
-import streamlit as st
-import sklearn
-
-# Display the scikit-learn version
-st.write("scikit-learn version:", sklearn.__version__)
-
-
-
-
-
 
 
 st.title("Heart Failure Prediction")

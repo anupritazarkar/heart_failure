@@ -4,4 +4,4 @@ import numpy as np
 
 
 st.title("Heart Failure Prediction")
-st.markdown("prediction")
+df=pd.read_csv(r"C:\Users\Anuprita\Desktop\LE Wagon\heart_failure_clinical_records.csv")

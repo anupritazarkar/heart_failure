@@ -28,24 +28,15 @@ st.write("Enter the details below to predict if the patient is alive (0) or dead
 
 # Input fields
 
-age = st.number_input("Age", min_value=0)
-anaemia = st.selectbox("Anaemia (1: Yes, 0: No)", [0, 1])
-creatinine_phosphokinase = st.number_input("Creatinine Phosphokinase")
-diabetes = st.selectbox("Diabetes (1: Yes, 0: No)", [0, 1])
+
 ejection_fraction = st.number_input("Ejection Fraction", min_value=0, max_value=100)
-high_blood_pressure = st.selectbox("High Blood Pressure (1: Yes, 0: No)", [0, 1])
-platelets = st.number_input("Platelets")
+
 serum_creatinine = st.number_input("Serum Creatinine")
-serum_sodium = st.number_input("Serum Sodium")
-sex = st.selectbox("Sex (1: Male, 0: Female)", [0, 1])
-smoking = st.selectbox("Smoking (1: Yes, 0: No)", [0, 1])
-time = st.number_input("Time")
+
 
 # Button for prediction
 if st.button("Predict"):
-    features = [age, anaemia, creatinine_phosphokinase, diabetes,
-                ejection_fraction, high_blood_pressure, platelets,
-                serum_creatinine, serum_sodium, sex, smoking, time]
+    features = [ejection_fraction,serum_creatinine]
     
     prediction = predict_heart_failure(features)
     result = "Dead" if prediction == 1 else "Alive"

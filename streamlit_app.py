@@ -10,6 +10,8 @@ import joblib  # Assuming you saved your model
 
 
 
+
+
 st.title("Heart Failure Prediction")
 
 # Load your trained model and scaler
@@ -41,4 +43,8 @@ if st.button("Predict"):
     prediction = predict_heart_failure(features)
     result = "Dead" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
+
+
+streamlit run check_version.py
+
 

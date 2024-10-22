@@ -164,8 +164,8 @@ if st.button("Predict"):
     result = "Dead" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
     
-    if result=="Alive"
-    st.balloons()
+    if result=="Alive":
+        st.balloons()
 
 
 

@@ -44,20 +44,10 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 # Display image from URL
 #st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Image from URL", use_column_width=True)
 
-st.markdown("""
-<style>
-.border {
-    border: 2px solid #4CAF50; /* Change color to fit your theme */
-    border-radius: 5px;
-    padding: 5px;
-}
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown('<div class="border">', unsafe_allow_html=True)
-st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Stylized Image", use_column_width=True)
+st.markdown('<style> .image-container { margin: 20px; } </style>', unsafe_allow_html=True)
+st.markdown('<div class="image-container">', unsafe_allow_html=True)
+st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Your Image Caption", use_column_width=True)
 st.markdown('</div>', unsafe_allow_html=True)
-
 
 # Model metrics
 model_accuracy = 0.90  # Example values, update with your actual model metrics

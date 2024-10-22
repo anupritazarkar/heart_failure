@@ -16,6 +16,15 @@ from sklearn.model_selection import train_test_split
 
 df=pd.read_csv("heart_failure_clinical_records.csv")
 
+# Correlation matrix
+correlation_matrix = df.corr()
+
+# Plotting the correlation matrix
+plt.figure(figsize=(12, 8))
+sns.heatmap(correlation_matrix, cmap='coolwarm', linewidths=0.5)
+plt.title('Correlation Matrix')
+plt.show()
+
 ## Splitting data into x and y
 x=df.drop(columns=['DEATH_EVENT'])
 y=df['DEATH_EVENT']

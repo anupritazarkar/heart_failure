@@ -17,13 +17,13 @@ from sklearn.model_selection import train_test_split
 
 # Custom CSS for styling the title
 
-col1, col2 = st.columns([3,1])
+col1, col2 = st.columns([3,1], vertical_alignment = "center")
 st.markdown(
     """
     <style>
     .title {
         color: CornflowerBlue;
-        font-size: 32px;
+        font-size: 26px;
         text-align: left;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;

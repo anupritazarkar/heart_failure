@@ -42,12 +42,9 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 #st.image('C:/Users/Anuprita/Downloads/rb_1516.png', caption="Local Image", use_column_width=True)
 
 # Display image from URL
-#st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Image from URL", use_column_width=True)
+st.image("https://www.freepik.com/free-vector/cardiology-clinic-hospital-department-healthy-he[…]kg-vector-isolated-concept-metaphor-illustration_11664303.htm", caption="Image from URL", use_column_width=True)
 
-st.markdown('<style> .image-container { margin: 20px; } </style>', unsafe_allow_html=True)
-st.markdown('<div class="image-container">', unsafe_allow_html=True)
-st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Your Image Caption", use_column_width=True)
-st.markdown('</div>', unsafe_allow_html=True)
+
 
 # Model metrics
 model_accuracy = 0.90  # Example values, update with your actual model metrics

@@ -16,16 +16,18 @@ from sklearn.model_selection import train_test_split
 
 
 # Custom CSS for styling the title
+
+
 st.markdown(
     """
     <style>
     .title {
-        color: blue;
-        font-size: 48px;
-        text-align: center;
+        color: CornflowerBlue;
+        font-size: 32px;
+        text-align: left;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
-        text-shadow: 2px 2px 4px #000000;
+        text-shadow: 1px 1px24px #000000;
         border-bottom: 3px solid #add8e6;
         padding-bottom: 10px;
     }

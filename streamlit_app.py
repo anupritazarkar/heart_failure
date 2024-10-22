@@ -166,6 +166,7 @@ if st.button("Predict"):
     
     if result=="Alive":
         st.balloons()
+st.markdown('</div>', unsafe_allow_html=True)
 
 
 

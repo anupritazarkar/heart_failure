@@ -147,6 +147,85 @@ rfc_mas_final.fit(X_train_mas_final, y_train_final)
 
 
 
+# CSS for styling and heart animation
+st.markdown(
+    """
+    <style>
+    .heart {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .heart.active {
+        display: flex;
+    }
+    .heart img {
+        width: 50px;
+        height: 50px;
+        animation: float 2s ease-in-out infinite;
+    }
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    .predict-button {
+        background-color: #ff4081;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .predict-button:hover {
+        background-color: #f50057;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+# JavaScript for showing hearts on button click
+st.markdown(
+    """
+    <script>
+    function showHearts() {
+        const heart = document.querySelector('.heart');
+        heart.classList.add('active');
+        setTimeout(() => heart.classList.remove('active'), 2000);  // Hearts disappear after 2s
+    }
+    </script>
+    """,
+    unsafe_allow_html=True
+)
+
+# Heart overlay (hidden by default, activated when the button is clicked)
+st.markdown(
+    """
+    <div class="heart">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Heart_coraz%C3%B3n.gif" />
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+  # JavaScript to trigger heart animation
+    st.markdown("<script>showHearts();</script>", unsafe_allow_html=True)
+
+
+
 
 
 # Function to make predictions

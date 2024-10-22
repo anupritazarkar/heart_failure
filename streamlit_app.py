@@ -25,7 +25,9 @@ correlation_matrix = df.corr()
 plt.figure(figsize=(12, 8))
 sns.heatmap(correlation_matrix, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Matrix')
-plt.show()
+
+# Display the heatmap in Streamlit
+st.pyplot(plt)
 
 ## Splitting data into x and y
 x=df.drop(columns=['DEATH_EVENT'])

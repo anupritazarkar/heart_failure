@@ -14,7 +14,6 @@ from sklearn.model_selection import train_test_split
 
 
 
-import streamlit as st
 
 # Custom CSS for styling the title
 st.markdown(
@@ -43,6 +42,10 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 
 
 # Load and display the heart image
+
+st.image("https://upload.wikimedia.org/wikipedia/commons/6/6e/Heart_anterior_exterior_view.jpg", 
+         caption="Heart Image", use_column_width=True)
+
 
 
 # Model metrics

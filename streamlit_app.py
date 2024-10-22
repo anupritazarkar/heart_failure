@@ -44,14 +44,14 @@ with col1:
 
 # Display local image
 with col2:
-    col2 = st.image('rb_1516.png', caption="Local Image", use_column_width=True)
-
-# Display image from URL
-#st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Resized Image from URL",width=300)
-
+    col2 = st.image('rb_1516.png', use_column_width=True)
 
 
 # Model metrics
+
+col3, col4, col5 = st.columns(3)
+
+col3.metric("Model Accuracy", "90%")
 model_accuracy = 0.90  # Example values, update with your actual model metrics
 model_precision = 0.90
 model_recall = 0.87

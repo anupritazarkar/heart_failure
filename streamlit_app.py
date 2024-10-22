@@ -44,7 +44,8 @@ model_accuracy = 0.90  # Example values, update with your actual model metrics
 model_precision = 0.90
 model_recall = 0.78
 
-st.metric(label="Model Accuracy", value=f"{model_accuracy*100:.2f}%")
+#st.metric(label="Model Accuracy", value=f"{model_accuracy*100:.2f}%")
+st.write(f"Model Accuracy: {model_accuracy:.2f}")
 st.write(f"Precision: {model_precision:.2f}")
 st.write(f"Recall: {model_recall:.2f}")
 

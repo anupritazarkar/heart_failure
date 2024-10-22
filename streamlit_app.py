@@ -10,8 +10,6 @@ from sklearn.model_selection import train_test_split
 
 
 
-st.title("Heart Failure Prediction")
-
 
 
 ## Loading model and scaler

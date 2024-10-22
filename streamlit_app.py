@@ -10,6 +10,17 @@ from sklearn.preprocessing import MaxAbsScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: lightblue;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.title("Heart Failure Prediction")
 

@@ -56,11 +56,6 @@ col4.metric("Model Precision", "90%")
 col5.metric("Model Recall", "87%")
 
 
-#st.metric(label="Model Accuracy", value=f"{model_accuracy*100:.2f}%")
-st.write(f"Model Accuracy: {model_accuracy:.2f}")
-st.write(f"Precision: {model_precision:.2f}")
-st.write(f"Recall: {model_recall:.2f}")
-
 # Custom CSS for styling
 st.markdown(
     """

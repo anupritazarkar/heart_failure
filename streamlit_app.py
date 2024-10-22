@@ -205,7 +205,7 @@ st.markdown(
 )
 
   # JavaScript to trigger heart animation
-    st.markdown("<script>showHearts();</script>", unsafe_allow_html=True)
+st.markdown("<script>showHearts();</script>", unsafe_allow_html=True)
 
 
 

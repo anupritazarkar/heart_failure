@@ -6,28 +6,54 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from PIL import Image
 from sklearn.preprocessing import MaxAbsScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
+
+
+
+st.title("Heart Failure Prediction")
+
+
+
+
+# Load and display the heart image
+image = Image.open(""C:\Users\Anuprita\Downloads\rb_1516.png"")  # or use a URL
+st.image(image, caption="Heart Failure Prediction", use_column_width=True)
+
+# Model metrics
+model_accuracy = 0.90  # Example values, update with your actual model metrics
+model_precision = 0.90
+model_recall = 0.78
+
+st.metric(label="Model Accuracy", value=f"{model_accuracy*100:.2f}%")
+st.write(f"Precision: {model_precision:.2f}")
+st.write(f"Recall: {model_recall:.2f}")
+
+# Custom CSS for styling
 st.markdown(
     """
     <style>
     body {
-        background-color: lightblue;
+        background-color: #f0f8ff;  /* Light blue background */
+    }
+    h1 {
+        color: darkblue;
+        text-align: center;
+    }
+    .stMetric {
+        font-size: 24px;  /* Custom font size for metrics */
+    }
+    .stImage {
+        border-radius: 10px;  /* Rounded corners for the image */
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-
-st.title("Heart Failure Prediction")
-
-import streamlit as st
-
-# Display an image from a URL
-st.image("https://lewagon-alumni.slack.com/files/U07F478CBBR/F07SRV2KP46/rb_1516.png", caption="Image from URL", use_column_width=True)
 
 
 

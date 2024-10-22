@@ -43,8 +43,7 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 
 
 # Load and display the heart image
-image = Image.open(C:\Users\Anuprita\Downloads\rb_1516.png)  # or use a URL
-st.image(image, caption="Heart Failure Prediction", use_column_width=True)
+
 
 # Model metrics
 model_accuracy = 0.90  # Example values, update with your actual model metrics

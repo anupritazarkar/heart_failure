@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 
-
+st.title("Heart Failure Prediction")
 
 
 ## Loading model and scaler
@@ -28,6 +28,8 @@ plt.title('Correlation Matrix')
 
 # Display the heatmap in Streamlit
 st.pyplot(plt)
+
+## Loading model and scaler
 
 ## Splitting data into x and y
 x=df.drop(columns=['DEATH_EVENT'])
@@ -72,7 +74,7 @@ def predict_heart_failure(features):
     return prediction[0]
 
 # Streamlit app layout
-st.title("Heart Failure Prediction")
+
 st.write("Enter the details below to predict if the patient is alive (0) or dead (1):")
 
 # Input fields

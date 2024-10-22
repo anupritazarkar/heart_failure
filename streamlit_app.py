@@ -4,34 +4,30 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-#from sklearn.preprocessing import MaxAbsScaler
-##from sklearn.ensemble import RandomForestClassifier
-import joblib  # Assuming you saved your model
+from sklearn.preprocessing import MaxAbsScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
 
 
 
 st.title("Heart Failure Prediction")
 
-# Load your trained model and scaler
-#rfc_mas_final = joblib.load('model.pkl')  # Replace with your model's filename
-#mas = joblib.load('scaler.pkl')  # Replace with your scaler's filename
+
 
 ## Loading model and scaler
 
-df=pd.read_csv(r"C:\Users\Anuprita\Desktop\LE Wagon\heart_failure_clinical_records.csv")
-## checking duplicates
-duplicates=df.duplicated().sum()
+df=pd.read_csv("heart_failure_clinical_records.csv")
 
 ## Splitting data into x and y
 x=df.drop(columns=['DEATH_EVENT'])
 y=df['DEATH_EVENT']
 
 ## splitting data into train test
-from sklearn.model_selection import train_test_split
+
 X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.15, random_state=2)
 
 ## applying maxabs scaler to the X_train, X_test
-from sklearn.preprocessing import MaxAbsScaler
+
 mas=MaxAbsScaler()
 X_train_mas=mas.fit_transform(X_train)
 X_test_mas=mas.transform(X_test)
@@ -45,16 +41,14 @@ X_train_final, X_test_final, y_train_final, y_test_final = train_test_split(feat
 
 
 ## applying maxabs scaler to the X_train, X_test
-from sklearn.preprocessing import MaxAbsScaler
-mas=MaxAbsScaler()
+
+#mas=MaxAbsScaler()
 X_train_mas_final=mas.fit_transform(X_train_final)
 X_test_mas_final=mas.transform(X_test_final)
 
 
-from sklearn.ensemble import RandomForestClassifier
 rfc_mas_final=RandomForestClassifier(n_estimators=100)
 rfc_mas_final.fit(X_train_mas_final, y_train_final)
-
 
 
 

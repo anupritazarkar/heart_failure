@@ -39,23 +39,6 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 
 
 
-
-
-# Load and display the heart image
-
-# Load and display the heart image
-# If the image is local, use the path to the image file, for example:
-image = Image.open('C:\Users\Anuprita\Downloads\rb_1516.png')  # Replace with the actual path to your image file
-
-# For an image hosted online, use:
-# st.image("https://example.com/your_heart_image.jpg", caption="Heart Health", use_column_width=True)
-
-# Display the image in Streamlit
-st.image(image, caption="Heart Health", use_column_width=True)
-
-
-
-
 # Model metrics
 model_accuracy = 0.90  # Example values, update with your actual model metrics
 model_precision = 0.90

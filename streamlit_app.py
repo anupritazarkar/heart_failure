@@ -37,11 +37,14 @@ st.markdown(
 )
 
 # Add your title using the custom class
-col1 = st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allow_html=True)
+with col1:
+    st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allow_html=True)
+
 
 
 # Display local image
-col2 = st.image('rb_1516.png', caption="Local Image", use_column_width=True)
+with col2:
+    col2 = st.image('rb_1516.png', caption="Local Image", use_column_width=True)
 
 # Display image from URL
 #st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Resized Image from URL",width=300)

@@ -34,7 +34,7 @@ correlation_matrix = df.corr()
 
 # Plotting the correlation matrix
 plt.figure(figsize=(12, 8))
-sns.heatmap(correlation_matrix, cmap='coolwarm', linewidths=0.5)
+sns.heatmap(correlation_matrix, annot=True,cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Matrix')
 
 # Display the heatmap in Streamlit

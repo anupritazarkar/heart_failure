@@ -4,6 +4,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.preprocessing import MaxAbsScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split

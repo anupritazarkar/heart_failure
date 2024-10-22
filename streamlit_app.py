@@ -17,7 +17,7 @@ from sklearn.model_selection import train_test_split
 
 # Custom CSS for styling the title
 
-
+col1, col2 = st.columns([3,1])
 st.markdown(
     """
     <style>
@@ -37,11 +37,11 @@ st.markdown(
 )
 
 # Add your title using the custom class
-st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allow_html=True)
+col1 = st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allow_html=True)
 
 
 # Display local image
-st.image('rb_1516.png', caption="Local Image", use_column_width=True)
+col2 = st.image('rb_1516.png', caption="Local Image", use_column_width=False)
 
 # Display image from URL
 #st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Resized Image from URL",width=300)

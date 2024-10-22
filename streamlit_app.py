@@ -43,8 +43,16 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 
 # Load and display the heart image
 
-st.image("https://upload.wikimedia.org/wikipedia/commons/6/6e/Heart_anterior_exterior_view.jpg", 
-         caption="Heart Image", use_column_width=True)
+# Load and display the heart image
+# If the image is local, use the path to the image file, for example:
+image = Image.open('C:\Users\Anuprita\Downloads\rb_1516.png')  # Replace with the actual path to your image file
+
+# For an image hosted online, use:
+# st.image("https://example.com/your_heart_image.jpg", caption="Heart Health", use_column_width=True)
+
+# Display the image in Streamlit
+st.image(image, caption="Heart Health", use_column_width=True)
+
 
 
 

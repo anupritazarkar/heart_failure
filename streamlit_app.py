@@ -42,7 +42,8 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 #st.image('C:/Users/Anuprita/Downloads/rb_1516.png', caption="Local Image", use_column_width=True)
 
 # Display image from URL
-st.image("https://www.freepik.com/free-vector/cardiology-clinic-hospital-department-healthy-he[…]kg-vector-isolated-concept-metaphor-illustration_11664303.htm", caption="Image from URL", use_column_width=True)
+st.image("https://www.freepik.com/free-vector/cardiology-clinic-hospital-department-healthy-he[…]kg-vector-isolated-concept-metaphor-illustration_12468752.htm
+", caption="Image from URL", use_column_width=True)
 
 
 

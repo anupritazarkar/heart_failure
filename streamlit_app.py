@@ -84,15 +84,21 @@ st.markdown(
 df=pd.read_csv("heart_failure_clinical_records.csv")
 
 # Correlation matrix
-correlation_matrix = df.corr()
+
+
+# Assuming df is already loaded with your dataset
+# Exclude the 'time' column from the correlation matrix
+df_filtered = df.drop(columns=['time'])
+
+# Create the correlation matrix without the 'time' column
+correlation_matrix = df_filtered.corr()
 
 # Plotting the correlation matrix
 plt.figure(figsize=(12, 8))
-sns.heatmap(correlation_matrix, annot=True,cmap='coolwarm', linewidths=0.5)
-plt.title('Correlation Matrix')
-
-# Display the heatmap in Streamlit
+sns.heatmap(correlation_matrix, cmap='coolwarm', annot=True, linewidths=0.5)
+plt.title('Correlation Matrix (without time)')
 st.pyplot(plt)
+
 
 ## Loading model and scaler
 

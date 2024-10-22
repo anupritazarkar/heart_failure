@@ -39,7 +39,7 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 
 
 # Display local image
-st.image('C:/Users/Anuprita/Downloads/rb_1516.png', caption="Local Image", use_column_width=True)
+#st.image('C:/Users/Anuprita/Downloads/rb_1516.png', caption="Local Image", use_column_width=True)
 
 
 

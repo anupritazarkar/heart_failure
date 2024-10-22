@@ -38,6 +38,10 @@ st.markdown(
 st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allow_html=True)
 
 
+# Display local image
+st.image('C:\Users\Anuprita\Downloads\rb_1516.png', caption="Local Image", use_column_width=True)
+
+
 
 # Model metrics
 model_accuracy = 0.90  # Example values, update with your actual model metrics

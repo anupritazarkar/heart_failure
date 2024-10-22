@@ -14,7 +14,30 @@ from sklearn.model_selection import train_test_split
 
 
 
-st.title("Heart Failure Prediction")
+import streamlit as st
+
+# Custom CSS for styling the title
+st.markdown(
+    """
+    <style>
+    .title {
+        color: blue;
+        font-size: 48px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px #000000;
+        border-bottom: 3px solid #add8e6;
+        padding-bottom: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Add your title using the custom class
+st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allow_html=True)
+
 
 
 

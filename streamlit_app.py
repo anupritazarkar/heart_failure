@@ -156,12 +156,15 @@ serum_creatinine = st.number_input("Serum Creatinine")
 
 
 # Button for prediction
+st.markdown('<div class="center-button">', unsafe_allow_html=True)
 if st.button("Predict"):
     features = [ejection_fraction,serum_creatinine]
     
     prediction = predict_heart_failure(features)
     result = "Dead" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
+    
+    if result=="Alive"
     st.balloons()
 
 

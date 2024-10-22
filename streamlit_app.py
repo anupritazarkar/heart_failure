@@ -52,9 +52,9 @@ with col2:
 col3, col4, col5 = st.columns(3)
 
 col3.metric("Model Accuracy", "90%")
-model_accuracy = 0.90  # Example values, update with your actual model metrics
-model_precision = 0.90
-model_recall = 0.87
+col4.metric("Model Precision", "90%")
+col5.metric("Model Recall", "87%")
+
 
 #st.metric(label="Model Accuracy", value=f"{model_accuracy*100:.2f}%")
 st.write(f"Model Accuracy: {model_accuracy:.2f}")
@@ -167,7 +167,7 @@ if st.button("Predict"):
     prediction = predict_heart_failure(features)
     result = "Dead" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
-
+    st.toast('Hooray!', icon = ♥️)
 
 
 

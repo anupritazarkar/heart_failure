@@ -162,7 +162,7 @@ if st.button("Predict"):
     prediction = predict_heart_failure(features)
     result = "Dead" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
-    st.toast('Hooray!', icon = "♥️")
+    st.ballons
 
 
 

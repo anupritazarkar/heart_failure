@@ -90,7 +90,7 @@ correlation_matrix = df_filtered.corr()
 # Plotting the correlation matrix
 plt.figure(figsize=(12, 8))
 sns.heatmap(correlation_matrix, cmap='coolwarm', annot=True, linewidths=0.5)
-plt.title('Correlation Matrix (without time)')
+plt.title('Correlation Matrix')
 st.pyplot(plt)
 
 

@@ -20,7 +20,7 @@ st.title("Heart Failure Prediction")
 
 
 # Load and display the heart image
-image = Image.open(""C:\Users\Anuprita\Downloads\rb_1516.png"")  # or use a URL
+image = Image.open("C:\Users\Anuprita\Downloads\rb_1516.png")  # or use a URL
 st.image(image, caption="Heart Failure Prediction", use_column_width=True)
 
 # Model metrics

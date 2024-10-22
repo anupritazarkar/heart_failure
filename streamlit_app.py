@@ -41,7 +41,7 @@ col1 = st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsa
 
 
 # Display local image
-col2 = st.image('rb_1516.png', caption="Local Image", use_column_width=False)
+col2 = st.image('rb_1516.png', caption="Local Image", use_column_width=True)
 
 # Display image from URL
 #st.image("https://thumbs.dreamstime.com/b/human-heart-anatomy-medical-science-vector-illustration-internal-organ-atrium-ventricle-aorta-pulmonary-trunk-72820305.jpg", caption="Resized Image from URL",width=300)

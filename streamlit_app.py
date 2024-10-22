@@ -24,6 +24,12 @@ st.markdown(
 
 st.title("Heart Failure Prediction")
 
+import streamlit as st
+
+# Display an image from a URL
+st.image("https://lewagon-alumni.slack.com/files/U07F478CBBR/F07SRV2KP46/rb_1516.png", caption="Image from URL", use_column_width=True)
+
+
 
 ## Loading model and scaler
 

@@ -46,7 +46,7 @@ st.markdown('<h1 class="title">Heart Failure Prediction Model</h1>', unsafe_allo
 # Model metrics
 model_accuracy = 0.90  # Example values, update with your actual model metrics
 model_precision = 0.90
-model_recall = 0.78
+model_recall = 0.87
 
 #st.metric(label="Model Accuracy", value=f"{model_accuracy*100:.2f}%")
 st.write(f"Model Accuracy: {model_accuracy:.2f}")

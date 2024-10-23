@@ -158,7 +158,7 @@ if st.button("Predict"):
     features = [ejection_fraction,serum_creatinine]
     
     prediction = predict_heart_failure(features)
-    result = "Dead" if prediction == 1 else "Alive"
+    result = "Critical Condition Predicted" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
     
     if result=="Alive":

@@ -142,7 +142,7 @@ def predict_heart_failure(features):
 
 # Streamlit app layout
 
-st.write("Enter the details below to predict if the patient is alive (0) or dead (1):")
+st.write("Enter the details below to predict if the patient is alive  or dead :")
 
 # Input fields
 
@@ -158,7 +158,7 @@ if st.button("Predict"):
     features = [ejection_fraction,serum_creatinine]
     
     prediction = predict_heart_failure(features)
-    result = "Critical Condition Predicted" if prediction == 1 else "Alive"
+    result = "Dead" if prediction == 1 else "Alive"
     st.write(f"The prediction is: **{result}**")
     
     if result=="Alive":

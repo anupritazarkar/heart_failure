@@ -164,6 +164,8 @@ if st.button("Predict"):
     if result=="Alive":
         st.balloons()
 st.markdown('</div>', unsafe_allow_html=True)
+
+st.image('C:\Users\Anuprita\Desktop\careerera pay\lewagon project\conclusion page.png', use_column_width=True)
     
 
 

@@ -165,7 +165,7 @@ if st.button("Predict"):
         st.balloons()
 st.markdown('</div>', unsafe_allow_html=True)
 
-st.image('C:\Users\Anuprita\Desktop\careerera pay\lewagon project\conclusion page.png', use_column_width=True)
+st.image('conclusion page.png', use_column_width=True)
     
 
 
